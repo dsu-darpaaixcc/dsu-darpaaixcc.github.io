@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>API Endpoints Documentation - My Docs</title>
+        <title>API Endpoints Documentation - DSU AIxCC</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../..">My Docs</a>
+                <a class="navbar-brand" href="../../..">DSU AIxCC</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,17 +31,14 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../../about/" class="nav-link">About</a>
+                                <a href="../../.." class="nav-link">CRS Homepage</a>
                             </li>
                             <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical Docs <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../test/" class="dropdown-item">Test</a>
+    <a href="../../outline/" class="dropdown-item">General</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -53,7 +50,40 @@
 </li>
             
 <li>
-    <a href="../Plugins%20and%20Models/" class="dropdown-item">Plugins & Models</a>
+    <a href="../Plugins/" class="dropdown-item">Plugins</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Docs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../User%20Docs/Overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">API</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../User%20Docs/API/Endpoints/" class="dropdown-item">API Endpoints Documentation</a>
+</li>
+            
+<li>
+    <a href="../../../User%20Docs/API/outline/" class="dropdown-item">Outline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Web Interface</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../User%20Docs/Web%20Interface/outline/" class="dropdown-item">Outline</a>
 </li>
     </ul>
   </li>
@@ -68,12 +98,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../test/" class="nav-link">
+                                <a rel="prev" href="../../outline/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Plugins%20and%20Models/" class="nav-link">
+                                <a rel="next" href="../Plugins/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -118,7 +148,7 @@
 <hr />
 <h2 id="predict-house-price">Predict House Price</h2>
 <ul>
-<li><strong>Endpoint</strong>: <code>/api/model/predict</code></li>
+<li><strong>Endpoint</strong>: <code>/api/model/pocmodel/predict</code></li>
 <li><strong>HTTP Method</strong>: POST</li>
 <li><strong>Description</strong>: Predicts the house price based on the input year.</li>
 </ul>
@@ -145,7 +175,8 @@
 <li><strong>Structure</strong> (on success):</li>
 </ul>
 <pre><code class="language-json">  {
-    &quot;predictedPrice&quot;: 250000
+    &quot;data&quot;: 250000,
+    &quot;status&quot;: &quot;Successful&quot;
   }
 </code></pre>
 <hr /></div>
