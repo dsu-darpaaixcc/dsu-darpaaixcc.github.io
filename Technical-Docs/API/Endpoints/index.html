@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>About - My Docs</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>API Endpoints Documentation - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">My Docs</a>
+                <a class="navbar-brand" href="../../..">My Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,17 +31,17 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">About</a>
+                            <li class="navitem">
+                                <a href="../../../about/" class="nav-link">About</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical Docs <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../Technical-Docs/test/" class="dropdown-item">Test</a>
+    <a href="../../test/" class="dropdown-item">Test</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -49,11 +49,11 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../Technical-Docs/API/Endpoints/" class="dropdown-item">API Endpoints Documentation</a>
+    <a href="./" class="dropdown-item active">API Endpoints Documentation</a>
 </li>
             
 <li>
-    <a href="../Technical-Docs/API/Plugins%20and%20Models/" class="dropdown-item">Plugins & Models</a>
+    <a href="../Plugins%20and%20Models/" class="dropdown-item">Plugins & Models</a>
 </li>
     </ul>
   </li>
@@ -68,12 +68,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../../test/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Technical-Docs/test/" class="nav-link">
+                                <a rel="next" href="../Plugins%20and%20Models/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -95,25 +95,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#about" class="nav-link">About</a>
+            <li class="nav-item" data-level="1"><a href="#api-endpoints-documentation" class="nav-link">API Endpoints Documentation</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#ignis-ionium" class="nav-link">Ignis Ionium</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#itum-coniunctis-admoti-et-accepit" class="nav-link">Itum coniunctis admoti et accepit</a>
+            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#thebae-hoc-imagine-tamen" class="nav-link">Thebae hoc imagine tamen</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#dolendi-mortalibus-admovit-tanto" class="nav-link">Dolendi mortalibus admovit tanto</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#ignarus-quid-pudor" class="nav-link">Ignarus quid pudor</a>
+            <li class="nav-item" data-level="2"><a href="#predict-house-price" class="nav-link">Predict House Price</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -124,92 +112,43 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="about">About</h1>
-<h2 id="ignis-ionium">Ignis Ionium</h2>
-<p>Lorem markdownum quid canistris qua ne sacri dubiaque ad Somni. Luctu te dignus
-mei numquam sistrorum quae primoque iamque: stant toto cum fons tamen? Ponto
-trahens creatas vivitur pascere et Quirini dixit vos miratus <em>animam nefasque
-rigorem</em> conde at lingua.</p>
-<pre><code>import os
-import sys
-
-
-def fooBar(val1, val2):
-    if (val1 &gt; val2):
-        print('Incorrect spacing around operators, and missing spaces after commas')
-    else:
-        print('Indentation is not a multiple of four')
-    try:
-        os.system('echo &quot;Hello&quot;')
-    except BaseException:
-        print(&quot;Exception handling should have exactly one space between 'except' and the colon&quot;)
-    for i in range(0, 10):
-        print(i)
-# Above, there's no newline before a comment, and the inline loop doesn't
-# adhere to proper newline usage.
-
-
-class exampleClass:
-    def __init__(self): self.data = []
-    # Inline method definitions and multiple statements on one line are
-    # against PEP 8.
-    def add_data(self, data): self.data.append(data); return self.data
-
-
-def BAD_NAMING_CONVENTION():
-    print('Function names should be lowercasea_, with words separated by underscores')
-
-
-# Excessive whitespace before '(' in function calls below:
-BAD_NAMING_CONVENTION()
-
-</code></pre>
-<blockquote>
-<p>Regnaque ne ibi duo Haec cum temptant et in <strong>nisi sorores</strong>; inquit proelia
-pectora exempta, non aetatem dicenda. Alimentaque videt Persephones recepit
-herbas <a href="http://a.net/fugiensquetangi.aspx">Phoebus avidum</a>, in inplet guttae
-mittere et habebas Ceres. Adit oscula ait dubitabilis, exspectato thalamos
-fronte Tyros <strong>inpietatis tuentur</strong> utque, coloni <strong>dote genetrix</strong> venire
-muneris spoliis terribili. Nulla <strong>undae</strong> iaces adpulit non socerum, quis
-crimen quamvis inane iussus praetentaque.</p>
-</blockquote>
-<h2 id="itum-coniunctis-admoti-et-accepit">Itum coniunctis admoti et accepit</h2>
-<p>In modo fugae. Ibis volant pennis Rhodanumque optat ad auctor, susceptaque Iovem
-omnia factum levatus sub foret rura agrestes retinere Pelops harundinibus.
-Oppositumque vocisque, haec primis? Madebit carmina somnum innectere. <strong>Hunc</strong>
-inania iugalis vaccae; quae spes mora aequore arbore nam petiit vix humum
-reddita fine munus.</p>
-<p>Orba depresso induere subposuisse fuit, thracius indigenae haec, ultaque, vexant
-copia. Virumque a illic fundit.</p>
-<h2 id="thebae-hoc-imagine-tamen">Thebae hoc imagine tamen</h2>
-<p>Pennis poenamque recusat scrobe Denique <em>et</em> luctus subiere et novo ergo soceri
-inpune magna? Acta nato invia cernis mare quae dura nos; luce age. Sed faxo est
-procul huc tota pedibus; resolvit sibi acutae.</p>
+<h1 id="api-endpoints-documentation">API Endpoints Documentation</h1>
+<h2 id="overview">Overview</h2>
+<p>This document outlines the available endpoints within the API, including details on request parameters, request body formats, response codes, and response body formats.</p>
+<hr />
+<h2 id="predict-house-price">Predict House Price</h2>
 <ul>
-<li>Acoete latus</li>
-<li>Urbe corpore erit gravem</li>
-<li>Totiens Dardanio rates</li>
-<li>Averso virginitate gravi nec terra maneas sinuataque</li>
-<li>Parens sanguine requirit nescit</li>
-<li>Simulacraque terram nymphae</li>
+<li><strong>Endpoint</strong>: <code>/api/model/predict</code></li>
+<li><strong>HTTP Method</strong>: POST</li>
+<li><strong>Description</strong>: Predicts the house price based on the input year.</li>
 </ul>
-<h2 id="dolendi-mortalibus-admovit-tanto">Dolendi mortalibus admovit tanto</h2>
-<p>Et pignus <strong>quaesiti iuvenemque</strong> iacet tenebrae herbas concitat altera. Cubilia
-ipsa <strong>angues</strong> Hyantea, ceperit fera dedisse que: <a href="http://www.volucris.io/quicquamquoque">est
-viri</a> inquit ea nobis! Nec vero Tatiumque
-fugere vobis et erat patre at putet. Bene ait vultus, conditor animos. Lycia
-successibus Auroram praecepta in dictis vires tanta vultu tellus pariter finem
-vestibus.</p>
-<h2 id="ignarus-quid-pudor">Ignarus quid pudor</h2>
-<p>Agis pro <a href="http://www.frustra.net/optima-paternum">aeterno insuitur</a> tibi materna
-adquirit, Pelasga si inque undae mihi tum postquam et primum dividite
-obstructaque famulis. Lelegeides nubes sed sparsisque frigoris fretoque sucis
-mulcendaque Pelasgi credis quod ille virgo, hunc. Nec mecum urgeturque si
-Alcyone victa? Et hoc est temperie umbras <strong>Cerberei corruit</strong>; modo inpulsos:
-o?</p>
-<p>Amor bibulaeque addunt guttura, parte, petit <strong>perpetuumque nulla</strong> gestum.
-Validique densi adversum, coniugis ut tamen descendat illi. Carpsere ad quam,
-nostros ut quoque, oculisque, manes illa cum mors furoris!</p></div>
+<h4 id="request-parameters">Request Parameters</h4>
+<p>None.</p>
+<h4 id="request-body">Request Body</h4>
+<ul>
+<li><strong>Content-Type</strong>: <code>application/json</code></li>
+<li><strong>Structure</strong>:</li>
+</ul>
+<pre><code class="language-json">  {
+    &quot;yearBuilt&quot;: 1985
+  }
+</code></pre>
+<h4 id="response-codes">Response Codes</h4>
+<ul>
+<li><code>200 OK</code>: The request was successful, and the prediction is returned.</li>
+<li><code>400 Bad Request</code>: The input data is invalid or missing.</li>
+<li><code>500 Internal Server Error</code>: An unexpected error occurred processing the request.</li>
+</ul>
+<h4 id="response-body">Response Body</h4>
+<ul>
+<li><strong>Content-Type</strong>: <code>application/json</code></li>
+<li><strong>Structure</strong> (on success):</li>
+</ul>
+<pre><code class="language-json">  {
+    &quot;predictedPrice&quot;: 250000
+  }
+</code></pre>
+<hr /></div>
             </div>
         </div>
 
@@ -217,14 +156,14 @@ nostros ut quoque, oculisque, manes illa cum mors furoris!</p></div>
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "..",
+            var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
