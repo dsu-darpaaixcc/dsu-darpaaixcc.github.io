@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../Utils/Logging/">
+        <link rel="prev" href="../../API/Utils/Data%20Singleton/">
       
       
-        <link rel="next" href="../Utils/Data%20Singleton/">
+        <link rel="next" href="../Plugins/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Outline - DSU AIxCC</title>
+        <title>Flask-Plugin Pattern Documentation - DSU AIxCC</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nametitle" class="md-skip">
+        <a href="#flask-plugin-pattern-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Outline
+              Flask-Plugin Pattern Documentation
             
           </span>
         </div>
@@ -705,6 +705,8 @@
                 
   
   
+    
+  
   
   
     
@@ -714,11 +716,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -732,7 +734,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Design Patterns
@@ -743,10 +745,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Design%20Patterns/Flask-Plugin%20Pattern/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Flask-Plugin Pattern Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -755,6 +777,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -767,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Design%20Patterns/Plugins/" class="md-nav__link">
+      <a href="../Plugins/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,8 +947,6 @@
                 
   
   
-    
-  
   
   
     
@@ -871,11 +956,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
@@ -889,7 +974,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Web
@@ -900,30 +985,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Outline
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Web/outline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -932,44 +997,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#else" class="md-nav__link">
-    <span class="md-ellipsis">
-      else
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1020,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Utils/Data%20Singleton/" class="md-nav__link">
+      <a href="../../Web/Utils/Data%20Singleton/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1314,9 +1341,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#else" class="md-nav__link">
+  <a href="#key-concepts" class="md-nav__link">
     <span class="md-ellipsis">
-      else
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
     </span>
   </a>
   
@@ -1337,10 +1391,62 @@
                   
 
 
-<p>(delete this line) use this for a starting outline for your docs</p>
-<h1 id="nametitle">Name/Title</h1>
+<h1 id="flask-plugin-pattern-documentation">Flask-Plugin Pattern Documentation</h1>
+<hr />
 <h2 id="overview">Overview</h2>
-<h2 id="else">else</h2>
+<p>make this less corporaty</p>
+<p>The Flask-Plugin Pattern is a class based approach to building and expanding web applications and APIs with ease. This pattern leverages the power of Flask—a lightweight and popular web framework—to allow developers to seamlessly integrate new features and components into their projects. While it is optimized for Flask, the underlying principles can be adapted to other frameworks with some modifications. The core idea is to simplify the process of adding, updating, and managing different parts of an application without having to delve into the complex underlying infrastructure.</p>
+<p>In the CRS, this pattern is utilized two times. Once for the API, and once for the Webserver. Note that these two patterns are the exact same between the two, so this documenation applies for both. </p>
+<hr />
+<h2 id="key-concepts">Key Concepts</h2>
+<p>At its heart, the Flask-Plugin Pattern revolves around the concept of "<a href="../Plugins">plugins</a>"—independent modules that can be easily "plugged" into the main application to introduce new functionality or modify existing features. This modular approach offers several advantages:</p>
+<ul>
+<li>
+<p><strong>Ease of Use</strong>: Developers can create new components or services by simply developing new <a href="../Plugins">plugins</a>. This means that you can extend the capabilities of your application without altering its core structure.</p>
+</li>
+<li>
+<p><strong>Flexibility</strong>: Since <a href="../Plugins">plugins</a> are independent, they can be developed, tested, and deployed separately. This modular nature allows for a more agile development process and makes it easier to iterate on specific parts of your application. Additionally, if one plugin breaks, the rest of the application continues to run. </p>
+</li>
+<li>
+<p><strong>Scalability</strong>: As your application grows, the Flask-Plugin Pattern enables you to manage complexity by organizing functionality into distinct <a href="../Plugins">plugins</a>. This makes it easier to scale your application and maintain it over time.</p>
+</li>
+</ul>
+<hr />
+<h2 id="how-it-works">How It Works</h2>
+<p>The Flask-Plugin Pattern involves a few straightforward steps to integrate new <a href="../Plugins">plugins</a> into your application:</p>
+<ol>
+<li>
+<p><strong>Plugin Development</strong>: Create a new plugin by defining its functionality, endpoints, and any necessary configurations. Each plugin is a self-contained unit that interacts with the main application through predefined interfaces.</p>
+</li>
+<li>
+<p><strong>Registration/Discovery</strong>: Once a plugin is developed, it is registered with the main application. This process involves linking the plugin's endpoints to the application's routing system, allowing the plugin to handle specific requests. This is done dynamically, and should "just work". More details on this in the <a href="../Plugins">plugins</a> documentation.</p>
+</li>
+<li>
+<p><strong>Deployment</strong>: With the plugin registered, it becomes an active part of the application, ready to serve requests and provide its intended functionality.</p>
+</li>
+</ol>
+<p>This pattern also encourages documentation and metadata for each plugin, ensuring that developers can understand and utilize them without needing to dive into the codebase.</p>
+<hr />
+<h2 id="benefits">Benefits</h2>
+<p>Adopting the Flask-Plugin Pattern in your project can lead to several benefits:</p>
+<ul>
+<li><strong>Rapid Development</strong>: Quickly add new features or services to your application by developing and integrating <a href="../Plugins">plugins</a>.</li>
+<li><strong>Maintainability</strong>: Keep your codebase clean and organized by separating different functionalities into <a href="../Plugins">plugins</a>, making it easier to update and maintain.</li>
+<li><strong>Collaboration</strong>: Facilitate collaboration among developers by allowing them to work on different <a href="../Plugins">plugins</a> simultaneously without conflicts.</li>
+</ul>
+<hr />
+<h2 id="getting-started">Getting Started</h2>
+<p>To start using the Flask-Plugin Pattern in your projects, you'll need a basic understanding of Flask and Python programming. From there, the pattern provides a framework to build upon, making the development process a lot simpler.</p>
+<p>Some helpful resources:</p>
+<ul>
+<li>
+<p><a href="../Plugins">Plugins documentation</a></p>
+</li>
+<li>
+<p><a href="../../API/Models%20%26%20Plugins/GPT2/">Example Plugin</a></p>
+</li>
+</ul>
+<hr />
 
 
 

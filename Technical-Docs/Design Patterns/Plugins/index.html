@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../Utils/Logging/">
+        <link rel="prev" href="../Flask-Plugin%20Pattern/">
       
       
-        <link rel="next" href="../Utils/Data%20Singleton/">
+        <link rel="next" href="../../Utils/Logging/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Outline - DSU AIxCC</title>
+        <title>Plugins - DSU AIxCC</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nametitle" class="md-skip">
+        <a href="#plugins" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Outline
+              Plugins
             
           </span>
         </div>
@@ -705,6 +705,8 @@
                 
   
   
+    
+  
   
   
     
@@ -714,11 +716,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -732,7 +734,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Design Patterns
@@ -746,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Design%20Patterns/Flask-Plugin%20Pattern/" class="md-nav__link">
+      <a href="../Flask-Plugin%20Pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,10 +766,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Design%20Patterns/Plugins/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Plugins
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -776,6 +798,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-loader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plugin Loader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-code-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plugin Code Template
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -860,8 +920,6 @@
                 
   
   
-    
-  
   
   
     
@@ -871,11 +929,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
@@ -889,7 +947,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Web
@@ -900,30 +958,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Outline
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Web/outline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -932,44 +970,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#else" class="md-nav__link">
-    <span class="md-ellipsis">
-      else
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1020,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Utils/Data%20Singleton/" class="md-nav__link">
+      <a href="../../Web/Utils/Data%20Singleton/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1305,18 +1305,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#plugin-loader" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Plugin Loader
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#else" class="md-nav__link">
+  <a href="#plugin-code-template" class="md-nav__link">
     <span class="md-ellipsis">
-      else
+      Plugin Code Template
     </span>
   </a>
   
@@ -1337,10 +1337,98 @@
                   
 
 
-<p>(delete this line) use this for a starting outline for your docs</p>
-<h1 id="nametitle">Name/Title</h1>
-<h2 id="overview">Overview</h2>
-<h2 id="else">else</h2>
+<h1 id="plugins">Plugins</h1>
+<p>Plugins are pieces of code that <code>plugin</code> to the CRS (or any flask app really, please steal this design if you want for your own projects). In the case of the CRS, the plugins are primarily model based, meaning they exist to interact with specific models. </p>
+<p>Plugins are great for modularity, as you can work exclusively on your "plugin", and as long as a few items are met, have it literally "plug in" to the project. Additionally, if one breaks, no biggie as it just gets skipped while the rest load. </p>
+<p>Ex:</p>
+<ul>
+<li>
+<p>C Plugin: </p>
+<ul>
+<li>
+<p>interacts with a model tied to C</p>
+</li>
+<li>
+<p>May have the following endpoints:</p>
+<ul>
+<li>
+<p>/api/model/c/detect-vulnerabilites</p>
+</li>
+<li>
+<p>/api/model/c/fix-vulnerabilites</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="plugin-loader">Plugin Loader</h2>
+<p>Loads plugins from the <code>Model</code> folder. Each Subfolder contains a plugin, which is a template/framework class that gets loaded on the API startup. </p>
+<p>This function is currenly in the Api.py file, named <code>load_plugins</code>. It's a tad bit messy, with about 3 nested loops, and could use a rework, but functions as expected, so it's fine for now.</p>
+<p>In a nutshell, the loader does the following:</p>
+<ol>
+<li>Finds the plugin (or in this case, <code>model</code>) directory</li>
+<li>Iterates over the folders in the directory</li>
+<li>in each folder, searches for a py file.</li>
+<li>Imports that Py file</li>
+<li>Pulls needed items from Py file &amp; Info class (Class name, Plugin Name, Plugin Path, etc)</li>
+<li>Takes the Class of the plugin, initializes it, passes in the <code>app</code> (the flask app instance), and runs the <code>main</code> method.</li>
+<li>If the <code>main</code> method is setup correctly (see example below), it should register all of its routes with the flask app, and start.</li>
+</ol>
+<h2 id="plugin-code-template">Plugin Code Template</h2>
+<p>The following is a bare minumum of what a plugin should contain, and what it needs to successfully work: </p>
+<pre><code>from Utils.Logger import LoggingSingleton
+
+################################################
+# Info class
+################################################
+'''Info class
+Fill in your info for the plugin here. This is defined near the top, so it's accessible
+by anything that may need it.
+'''
+class Info:
+    name    = &quot;ExamplePlugin&quot;
+    author  = &quot;author_name&quot;
+    endpoint = &quot;/api/model/endpoint&quot;
+    classname = &quot;ClassName&quot;
+
+class ClassName():
+    def __init__(self, app):
+        self.logger = LoggingSingleton.get_logger()
+        self.app = app
+
+################################################
+# Main Stuff
+################################################
+
+    # main function for the plugin, gets called by the plugin loader
+    def main(self):
+        '''
+        Main function/entry point for the plugin. Called when plugin is loaded
+        '''
+        self.logger.debug(f&quot;Loading {Info.name}&quot;)
+        self._register_routes()
+
+    ## Put all the routes here.
+    def _register_routes(self):
+        self.app.route(f'{Info.endpoint}', methods = [&quot;GET&quot;])(self.model_endpoint)
+        self.app.route(f'{Info.endpoint}/predict', methods = [&quot;POST&quot;])(self.model_predict)
+
+    # note, change/delete this method. Multiple methods accross the project with the same name &amp; registered routes will cause issues
+    def example_endpoint(self):
+        '''
+        example endpoint
+
+        '''
+        # do whatever you want here, call other funcs/classes, etc. Just make sure 
+        # it returns a value if it's mapped to an endpoint
+
+        # Calculate last digit of pi
+        # Find the meaning of life
+
+        return jsonify({&quot;status&quot;:f&quot;Plugin {Info.name} successfully started&quot;})
+
+</code></pre>
 
 
 
